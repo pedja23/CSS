@@ -12,14 +12,14 @@
         a[target]{
             color: red;
         }
-        .second-div p:nth-child(2n+0){
+        #second-div p:nth-child(2n+0){
             color: red;
         }
-        .second-div p:nth-child(2n+1){
+        #second-div p:nth-child(2n+1){
             color: blue;
 
         }
-        .R::after{
+        #first-div > p::after{
             content: "-NEW";
             color: rgb(241, 245, 45);
         }
@@ -36,11 +36,11 @@
     <a href="https://www.google.com/">Google</a>
     <a href="https://www.google.com/doodles">Google Doodles</a>
     <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
-    <div id="first-div">
+    <div id="first-div" class="prvi">
         <h2>Subheading</h2>
-        <p class="R">Paragraph 2</p>
-        <p class="R">Paragraph 3</p>
-        <div class="second-div">
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <div id="second-div">
             <h3>Sub subheading</h3>
             <p>Paragraph 4</p>
             <p>Paragraph 5</p>
